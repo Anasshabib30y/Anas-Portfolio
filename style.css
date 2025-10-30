@@ -118,3 +118,77 @@ button:hover{
     margin: 10px;
     font-size: 20px;
 }
+
+.cards{
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: auto; */
+}
+.content-cards{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    /* padding: 300px;
+    padding-left: 400px; */
+
+}
+.cards h2{
+    padding-top: 70px;
+    font-size: 56px;
+    color: #505050;
+    /* padding-left: 600px; */
+}
+.card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #505050;
+    margin-bottom: 2%;
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    /* margin: 20px; */
+    transition: 0.7s ease;
+    /* padding: 20px; */
+    /* font-size: ; */
+    text-align: center;
+    margin-top: 25%;
+    /* margin-left: ; */
+    margin-bottom: 22%;
+}
+
+.card i{
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.address{
+    font-size: 26px;
+    color: #b4b4b4;
+
+}
+.card p{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 30px;
+}
+.card:hover{
+    transform: scale(1.1);
+    /* background-color: #414141; */
+    cursor:zoom-in;
+}
+.web-card{
+
+    margin-right: 40px;
+}
+.Data-card{
+
+    margin-left: 40px;
+}
