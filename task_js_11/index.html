@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>مولد الأسماء</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 20px; }
+    .name-box { background: #f1f1f1; margin: 10px auto; padding: 15px; width: 200px; border-radius: 10px; }
+    .copy-btn { margin-top: 5px; background: #2563eb; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>🎲 مولد الأسماء</h1>
+  <select id="gender">
+    <option value="">أي نوع</option>
+    <option value="male">ذكر</option>
+    <option value="female">أنثى</option>
+  </select>
+  <button id="genApi">أسماء من API</button>
+  <button id="genCustom">أسماء خيالية</button>
+
+  <div id="results"></div>
+
+  <script>
+    // 🔹 مقاطع لعمل أسماء خيالية
+    const start = ["را", "شي", "مار", "لو", "زا", "كو"];
+    const mid   = ["ا", "ي", "و", "ين", "ور"];
+    const end   = ["ان", "ون", "يل", "وس", "ار"];
+
+    function makeCustomName() {
+      const s = start[Math.floor(Math.random() * start.length)];
+      const m = Math.random() < 0.5 ? mid[Math.floor(Math.random() * mid.length)] : "";
+      const e = end[Math.floor(Math.random() * end.length)];
+      return s + m + e;
+    }
+
+    // 🔹 عرض الاسم
+    function showName(name, source) {
+      const div = document.createElement("div");
+      div.className = "name-box";
+      div.innerHTML = `<div><b>${name}</b></div><small>${source}</small><br>
+                       <button class="copy-btn">نسخ</button>`;
+      div.querySelector(".copy-btn").onclick = () => {
+        navigator.clipboard.writeText(name);
+        alert("تم النسخ ✅");
+      };
+      document.getElementById("results").appendChild(div);
+    }
+
+    // 🔹 جلب أسماء من API
+    async function getApiNames() {
+      document.getElementById("results").innerHTML = "";
+      const gender = document.getElementById("gender").value;
+      const url = `https://randomuser.me/api/?results=3${gender ? "&gender=" + gender : ""}`;
+      const res = await fetch(url);
+      const data = await res.json();
+      data.results.forEach(u => {
+        const fullName = `${u.name.first} ${u.name.last}`;
+        showName(fullName, "من API");
+      });
+    }
+
+    // 🔹 أسماء خيالية
+    function getCustomNames() {
+      document.getElementById("results").innerHTML = "";
+      for (let i = 0; i < 5; i++) {
+        showName(makeCustomName(), "خيالي");
+      }
+    }
+
+    // 🔹 ربط الأزرار
+    document.getElementById("genApi").onclick = getApiNames;
+    document.getElementById("genCustom").onclick = getCustomNames;
+  </script>
+
+</body>
+</html>

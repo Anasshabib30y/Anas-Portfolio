@@ -1,0 +1,556 @@
+
+
+.nav{
+    background-color: #fff;
+    height: 50px;
+    width:1300px;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    text-align: center;
+    margin-top: -7.8px;
+    /* left: 80px; */
+    /* position: relative; */
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+        text-decoration: none;
+
+    padding: 0;
+}
+
+.nav ul li{
+    margin: 7px 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #66989b;
+}
+.fa-arrow-right{
+
+    margin: 7px 1rem;
+    position: relative;
+    top: 6px;
+    left: 15px;
+    cursor: pointer;
+
+}
+
+
+div{
+
+    width: 100%;
+    height: 500px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    fill-opacity: calc(1);
+    border: 1px solid black;
+    margin: 10px
+    
+}
+
+div img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.price{
+    color: #66989b;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+
+.rate{
+    width: 50px;
+    height: 10px;
+    margin-left: 35px;
+    color: #d59daa;
+    border: none;
+}
+input{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    left: 70px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+.names{
+    color: #66989b;
+    font-size: 30px;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+    .comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-bottom: 50px;
+    height: 650px;
+}
+
+.comments{
+
+font-size: larger;
+font-family: 'Times New Roman', Times, serif;
+color: #d59daa;
+}
+
+.M{
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border: 3px solid #66989b;
+margin: 10px;
+padding: 10px;
+width: 500px;
+height: 200px;
+border-radius: 5px;
+}
+
+.user_comment{    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border: 3px solid #66989b;
+margin: 10px;
+padding: 10px;
+width: 500px;
+height: 200px;
+border-radius: 5px;}
+
+.A{
+    position: relative;
+    left: -0px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border: 3px solid #66989b;
+margin: 10px;
+padding: 10px;
+width: 500px;
+height: 200px;
+border-radius: 5px;
+}
+
+
+button{
+color: white;
+background-color: #2a605a;
+width: 100%;
+height: 50px;
+border-radius: 30px;
+border: none;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#btn{
+    font-size: 30px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 10px;
+    position: relative;
+    left: -460px;
+}
+
+
+  /* media queries */
+  /* First for bigger screens (like desktop screens for instance). */
+  @media (max-width:1023px){
+
+    
+
+  }
+  
+  /* Then for smaller screens (like tablet screens for instance). */
+  
+  @media (max-width:641px){
+  
+    div{
+
+    width: 100%;
+    height: 381px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    scrollbar-width: none;
+    box-shadow: none;
+    fill-opacity: calc(1);
+    border:none;
+    margin: 8px
+    
+}
+
+    .container{
+            width: 100%;
+    height: 381px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* مسافة بين الصور */
+    overflow-x: auto; /* يضيف الاسكرول الأفقي */
+    scroll-behavior: smooth; /* حركة ناعمة */
+    scrollbar-width: none;
+    box-shadow: none;
+    fill-opacity: calc(1);
+    border:none;
+    margin: 8px
+    }
+
+div img{
+    width: 200px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+.price{
+    color: #66989b;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+
+.rate{
+    width: 40px;
+    height: 7px;
+    margin-left: 35px;
+    color: #d59daa;
+    border: none;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 8px;
+    position: relative;
+    left: 50px;
+    text-align: center;
+    font-size: x-large;
+}
+
+
+.names{
+    color: #66989b;
+    font-size: 15px;
+    margin: 3px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+    .comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-bottom: 35px;
+    height:auto;
+}
+
+.comments{
+
+font-size: larger;
+font-family: 'Times New Roman', Times, serif;
+color: #d59daa;
+}
+
+.M{
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border: 3px solid #66989b;
+margin: 8px;
+padding: 8px;
+width: 350px;
+height: 150px;
+border-radius: 5px;
+}
+
+.user_comment{    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border: 3px solid #66989b;
+margin: 8px;
+padding: 8px;
+width: 350px;
+height: 150px;
+border-radius: 5px;}
+
+
+.A{
+    position: relative;
+    left: -0px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border: 3px solid #66989b;
+margin: 8px;
+padding: 8px;
+width: 350px;
+height: 150px;
+border-radius: 5px;
+}
+
+
+button{
+color: white;
+background-color: #2a605a;
+width: 100%;
+height: 35px;
+border-radius: 30px;
+border: none;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#btn{
+    font-size: 20px;
+    width: 70px;
+    border-radius: 5px;
+    margin: 8px;
+    position: relative;
+    left: -360px;
+}
+  
+  }
+  
+  /* And finally, for even smaller screens (like mobile screens for instance). */
+  
+  @media (max-width:480px){
+  
+        div{
+
+    width: 100%;
+    height: 281px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    scrollbar-width: none;
+    box-shadow: none;
+    fill-opacity: calc(1);
+    border:none;
+    margin: 4px
+    
+}
+
+    .container{
+            width: 100%;
+    height: 281px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* مسافة بين الصور */
+    overflow-x: auto; /* يضيف الاسكرول الأفقي */
+    scroll-behavior: smooth; /* حركة ناعمة */
+    scrollbar-width: none;
+    box-shadow: none;
+    fill-opacity: calc(1);
+    border:none;
+    margin: 4px
+    }
+
+div img{
+    width: 140px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.price{
+    color: #66989b;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 9px;
+}
+
+.rate{
+    width: 25px;
+    height: 4px;
+    margin-left: 25px;
+    color: #d59daa;
+    border: none;
+}
+input{
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    position: relative;
+    left: 30px;
+    text-align: center;
+    font-size: large;
+}
+
+
+.names{
+    color: #66989b;
+    font-size: 9px;
+    margin: 2px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+    .comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-bottom: 20px;
+    height:auto;
+}
+
+.comments{
+
+font-size: medium;
+font-family: 'Times New Roman', Times, serif;
+color: #d59daa;
+}
+
+.M{
+    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border: 2px solid #66989b;
+margin: 4px;
+padding: 5px;
+width: 250px;
+height: 90px;
+border-radius: 5px;
+}
+
+.user_comment{    position: relative;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border: 2px solid #66989b;
+margin: 4px;
+padding: 5px;
+width: 250px;
+height: 90px;
+border-radius: 5px;}
+
+
+.A{
+    position: relative;
+    left: -0px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+border: 2px solid #66989b;
+margin: 4px;
+padding: 5px;
+width: 250px;
+height: 90px;
+border-radius: 5px;
+}
+
+
+button{
+color: white;
+background-color: #2a605a;
+width: 100%;
+height: 20px;
+border-radius: 30px;
+border: none;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#btn{
+    font-size: 10px;
+    width: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    left: -300px;
+}  
+  
+  }
+  
+  

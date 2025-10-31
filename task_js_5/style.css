@@ -1,0 +1,120 @@
+.root{
+    --background-All: #737373;
+    --text-color: #a6a6a6;
+}
+
+body{
+    background-color: #cfcece;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+}
+
+.header{
+    
+    background-color: #737373;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    right: 30px;
+    top: -33px;
+    font-size: 24px;
+    width: 1492px;
+    height: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    position: inherit;
+    top: 3px;
+    color: #a6a6a6;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.scores_box {
+    margin: 40px auto;
+    background-color: #737373;
+    width: 300px;
+    height: auto;
+    color: #a6a6a6;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 3px solid #fff;
+    font-size: 40px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+/* مربع الألقاب فوق السكور */
+.score-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+/* شكل البادجات */
+.badge {
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline;
+}
+
+
+.scores{
+   
+padding-top: 9%;
+}
+
+span{
+    color: white;
+}
+
+
+.heads{
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 30px;
+    background-color: #737373;  
+    color: #a6a6a6;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 500%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 8px solid #737373;
+    font-size: 20px;
+}
+
+
+.tails{
+    margin-top: 80px;
+    margin-left: 90px;
+    margin-right: 30px;
+    background-color: #737373;  
+    color: #a6a6a6;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 500%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 8px solid #737373;
+    font-size: 20px;
+}
+
+
+.rule{
+    color:#a6a6a6;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}

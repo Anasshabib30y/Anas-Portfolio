@@ -1,0 +1,220 @@
+ let menu = [{
+    id: 1,
+    title: "Broccolli & Sun-dried Omelette",
+    category: "breakfast",
+    price: 120.00,
+    img: "./menuItems/brocolliomlette.png",
+    desc: `Broccoli, sun-dried tomatoes, omelette with a side of homemade fries. `,
+    rating: "★★★☆☆",
+  },
+  {
+    id: 2,
+    title: "Eggs Florentine Sandwich",
+    category: "breakfast",
+    price: 110.00,
+    img: "./menuItems/eggflorentinesand.png",
+    desc: `Poached eggs, hollandaise sauce, beef bacon and spinach on a sour dough bun with a side of mix greens and homemade fries.`,
+    rating: "★★★★☆",
+  },
+  {
+    id: 3,
+    title: "egg",
+    category: "breakfast",
+    price: 190,
+    img: "images/egg.jpeg",
+    desc: `Fried eggs are a simple and quick dish in which eggs are cooked in a pan with oil or butter until the whites and yolks are cooked to your liking.`,
+    rating: "★★★★★★",
+  },
+  {
+    id: 4,
+    title: "French fries",
+    category: "breakfast",
+    price: 30.00,
+    img: "images/potato.jpeg",
+    desc: `French fries are a delicious and beloved dish all over the world, consisting of potato slices that are fried in oil until golden and crispy.`,
+    rating: "★★★★★",
+  },
+
+  {
+    id: 5,
+    title: "Chicken Picatta",
+    category: "lunch",
+    price: 150.00,
+    img: "./menuItems/chickenpicatta.png",
+    desc: `Chicken cutlet in creamy mushroom and caramelized onion sauce served with fettuccine cream pasta. `,
+    rating: "★★★★★",
+  },
+  {
+    id: 6,
+    title: "Bird's tongue soup",
+    category: "soup",
+    price: 100.00,
+    img: "images/soupe.jpeg",
+    desc: `Bird's tongue soup is a light, low-calorie, and healthy soup.`,
+    rating: "★★★★★",
+  },
+  {
+    id: 7,
+    title: "Pasta with a rich",
+    category: "lunch",
+    price: 195.00,
+    img: "images/white souce.jpeg",
+    desc: `Pasta with a rich, creamy white sauce enriched with cheese.`,
+    rating: "★★★★★",
+  },
+  {
+    id: 8,
+    title: "Roasted Peaches and Honey Comb",
+    category: "desserts",
+    price: 85.00,
+    img: "./menuItems/roastedpeach.png",
+    desc: `Roasted peaches with honeycomb crumbles and vanilla ice cream.`,
+    rating: "★★★★☆",
+  },
+  {
+    id: 9,
+    title: "Lotus French Toast",
+    category: "desserts",
+    price: 70.00,
+    img: "./menuItems/lotusfrenchtoast.png",
+    desc: `Lotus biscuit spread on French toast topped with vanilla ice cream`,
+    rating: "★★★☆☆"
+  },
+
+  {
+    id: 10,
+    title: "Cinnamon",
+    category: "desserts",
+    price: 170.00,
+    img: "images/CINNABON.jpeg",
+    desc: `Cinnamon rolls are made of soft dough filled with cinnamon and sugars, and covered with cream cheese.`,
+    rating: "★★★★★",
+  },
+
+  {
+    id: 11,
+    title: "Moroccan Tea",
+    category: "Drinks",
+    price: 30.00,
+    img: "./menuItems/moroccantea.png",
+    desc: `Refreshing imported Moroccan Tea with mint leaves, served with sugar to your taste.`,
+    rating: "★★★★☆",
+  },
+  {
+      id: 12,
+      title: "Spanish Latte",
+      category: "Drinks",
+      price: 45.00,
+      img: "./menuItems/latte.png",
+      desc: `Freshly brewed coffee slowly poured onto a layer of sweetened condensed milk and topped with frothed milk. Flavour added to your taste.`,
+      rating: "★★★★★",
+    },
+    {
+      id: 13,
+      title: "Water",
+      category: "Drinks",
+      price: 15.00,
+      img: "./menuItems/water.png",
+      desc: `Refreshing coldwater from our elite sources. Tip: ask for a lemon wedge and a mint leaf for extra freshness and a good detox!`,
+      rating: "☆☆☆☆☆",
+    },
+
+    {
+      id: 14,
+      title: "mojito",
+      category: "Drinks",
+      price: 30.00,
+      img: "images/mohito.webp",
+      desc: `A mojito is a refreshing drink featuring a combination of flavors, typically consisting of white rum, sugar, lime juice, mint, and soda water.`,
+      rating: "★★★★★",
+    },
+
+  {
+    id: 15,
+    title: "Chicken Soup",
+    category: "soup",
+    price: 70.00,
+    img: "./menuItems/chickensoup.png",
+    desc: `Diced chicken and cream served with a lemon wedge, croutons, and some chopped Parsely.`,
+    rating: "★★★★☆",
+  },
+
+]
+
+
+ const section_center = document.querySelector(".section-center");
+  const btn_Container = document.querySelector(".btn-container")
+
+  window.addEventListener("DOMContentLoaded",()=>{
+    displayMenuItems(menu);
+    displayMenuButtons(menu);
+  })
+
+
+
+  function displayMenuItems(menu){
+    let displayMenu = menu.map(function(item){
+        return`
+        
+        
+        <article class="menu-item">
+          <img src="${item.img}" alt="${item.title}" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>${item.title}</h4>
+              <h4 class="price">${item.price} LE</h4>
+            </header>
+            <p class="item-text">
+            ${item.desc}
+            </p>
+          </div>
+        </article>`;
+
+
+
+    })
+        
+    displayMenu = displayMenu.join("");
+
+    section_center.innerHTML = displayMenu;
+}
+
+    function displayMenuButtons(menu){
+      const categories = menu.reduce(function(values,item){
+        if(!values.includes(item.category)){
+          values.push(item.category);
+        }
+        return values;
+      },["all"])
+
+
+      const categoryBtns = categories.map(function(category){
+        return`
+        <button type="button" class="filter-btn" data-id="${category}">${category}</button>
+        `;
+      }).join("");
+
+      btn_Container.innerHTML = categoryBtns;
+      const filterBtns = btn_Container.querySelectorAll(".filter-btn");
+
+
+    const fillterBtn = btn_Container.querySelectorAll(".filter-btn");
+
+    fillterBtn.forEach(function(btn){
+      btn.addEventListener("click",function(e){
+        const category = e.currentTarget.dataset.id;
+        const menuCategory = menu.filter(function(menuItem){
+          if(menuItem.category === category){
+            return menuItem;
+          }
+        })
+        if(category === "all"){
+          displayMenuItems(menu);
+        }
+        else{
+          displayMenuItems(menuCategory);
+        }
+      })
+    })
+
+  }
