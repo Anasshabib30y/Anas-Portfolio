@@ -337,3 +337,21 @@ button:hover{
     border: none;
     margin-bottom: 100px;
 }
+footer{
+    background-color:  #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+
+
+}
+footer p{
+    color: white;
+
+}
+footer .social-icons{
+    margin-bottom: 30px;
+}
