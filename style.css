@@ -138,7 +138,7 @@ button:hover{
 
 }
 .cards h2{
-    padding-top: 70px;
+    padding-top: 120px;
     font-size: 56px;
     color: #505050;
     /* padding-left: 600px; */
@@ -191,4 +191,61 @@ button:hover{
 .Data-card{
 
     margin-left: 40px;
+}
+
+.projects{
+    background-color: #4c4b47;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+    /* margin-left: auto; */
+
+}
+.projects h2{
+    padding-top: 120px;
+    font-size: 56px;
+    color: white;
+    /* padding-left: 600px; */
+}
+
+.content-projects{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* columns: 3; */
+    /* padding: 300px;
+
+    padding-left: 400px; */
+}
+
+.content-projects .card{
+    width: 300px;
+    margin-top: 150px;
+    margin: 50px;
+    background-color: #b4b4b4;
+}
+
+.img_div{
+    width: auto;
+    height: auto;
+    
+
+}
+.img_div img{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+
+}
+.content-projects a{
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
 }
