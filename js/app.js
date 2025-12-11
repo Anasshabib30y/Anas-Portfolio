@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: "#contact",
       start: "center center",
       end: "bottom center",
-      markers: true,
+    //   markers: true,
    
     },
   })
