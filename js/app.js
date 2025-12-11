@@ -232,9 +232,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     scrollTrigger: {
       trigger: "#contact",
-      start: "top+=100 center",
+      start: "center center",
       end: "bottom center",
-    //   markers: true,
+      markers: true,
    
     },
   })
@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       scrollTrigger: {
       trigger: "#contact",
-      start: "top+=100 center",
+      start: "center center",
       end: "bottom center",
     //   markers: true,
    
